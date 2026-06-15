@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a2e"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvStationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adrian Radio Studio"
+            android:textSize="28sp"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:contentDescription="Radio station name: Adrian Radio Studio"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to broadcast!"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#2d2d44"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Status display"/>
+
+        <!-- GO LIVE BUTTON -->
+        <Button
+            android:id="@+id/btnMic"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="GO LIVE"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:backgroundTint="#e63946"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Go live button. Tap to start broadcasting your voice."/>
+
+        <!-- DIVIDER LABEL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MUSIC CONTROLS"
+            android:textSize="14sp"
+            android:textColor="#aaaaaa"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- PLAY MUSIC BUTTON -->
+        <Button
+            android:id="@+id/btnPlayMusic"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="PLAY MUSIC"
+            android:textSize="20sp"
+            android:backgroundTint="#2a9d8f"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Play music button. Tap to play background music."/>
+
+        <!-- STOP MUSIC BUTTON -->
+        <Button
+            android:id="@+id/btnStopMusic"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="PAUSE MUSIC"
+            android:textSize="20sp"
+            android:backgroundTint="#457b9d"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Pause music button. Tap to pause the background music."/>
+
+        <!-- MUSIC VOLUME -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music Volume"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="Music volume slider label"/>
+
+        <SeekBar
+            android:id="@+id/seekMusicVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="80"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="Music volume slider. Slide right to increase, left to decrease."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adrian Radio Studio v1.0"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>
